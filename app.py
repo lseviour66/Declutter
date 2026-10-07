@@ -5,6 +5,9 @@ import torch
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from ultralytics import YOLO
 import random
+import os
+os.environ["YOLO_NO_CV2"] = "1"
+
 
 # -------------------------------------------------
 # GLOBAL MODELS ONLY
