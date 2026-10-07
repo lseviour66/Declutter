@@ -1,3 +1,9 @@
 streamlit
-pandas
+Pillow
 numpy
+torch
+transformers
+ultralytics
+accelerate
+opencv-python
+
