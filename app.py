@@ -1,3 +1,8 @@
+
+import os
+os.environ["YOLO_NO_CV2"] = "1"
+os.environ["TRANSFORMERS_NO_OPENCV"] = "1"
+
 import streamlit as st
 from PIL import Image, ImageDraw, ImageOps
 import numpy as np
@@ -5,8 +10,7 @@ import torch
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from ultralytics import YOLO
 import random
-import os
-os.environ["YOLO_NO_CV2"] = "1"
+
 
 
 # -------------------------------------------------
